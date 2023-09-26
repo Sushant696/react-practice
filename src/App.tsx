@@ -1,12 +1,21 @@
-import "./App.css";
+type prop = {
+  name: string;
+  count: number;
+  isLoggedIn: boolean;
+};
 
-function App() {
+function App(props: prop) {
+ 
+
   return (
     <>
-      <div>
-        React with typescript including Chakra UI styled component and Tailwind
-        Css
-      </div>
+      <h3>
+        {props.isLoggedIn
+          ? `welcome ${props.name} you have ${props.count} unread messages`
+          : `welcome guest`}
+        
+      </h3>
+      {/* <button className="btn">count</button> */}
     </>
   );
 }

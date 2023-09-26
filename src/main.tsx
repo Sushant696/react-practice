@@ -1,14 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-// import App from './App.tsx'
-import "./index.css";
-import TextTypingAnimation from "./pages/typingAnimation/index";
 
-// import TextTypingAnimation  from './pages/typingAnimation/index.tsx'
-ReactDOM.createRoot(document.getElementById("root")!).render(
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+// import App from './App.tsx'
+import './index.css'
+import { ProductList } from './listingProducts/listing'
+// import { Login } from './Ant_design/login'
+
+
+
+
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    {/* <App /> */}
-    {/* <TextTypingAnimation/> */}
-    <TextTypingAnimation/>
-  </React.StrictMode>
-);
+    {/* <Login/> */}
+    <ProductList/>
+  </React.StrictMode>,
+)
+  
